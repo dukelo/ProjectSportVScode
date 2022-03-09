@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/css/bootstrap.css" rel="stylesheet">
+    <link href="./resources/css/sportStyle.css" rel="stylesheet">
+    <!-- <script src="./resources/js/bootstrap.js"></script> -->
+    <script src="./resources/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./resources/fontawesome-free-5.15.4-web/css/all.css">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <title>hiking</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header style="background-color: #48dbfb">
+        <div class="container">
+        <div class="row justify-content-between align-items-center" >
+            <div class="col-md-3">
+                <a href="index.html"><img src="./resources/img/mountains-31589.svg" style="width: 25%;"></a>
+            </div>
+
+            <div class="col-md-3">
+                <h5 class="d-inline fw-bold text-dark">Member: </h5><span id="userName" class="h5 fw-bold text-muted">Tom</span>
+            </div>
+        </div>
+        </div>
+    </header>
+
+        <!-- <header class="mt-3 pt-3 pb-3"> -->
+    <header class="pt-1 pb-3">
+        <div class="container  align-items-center">
+
+            <div class="row mt-4">
+                <div class="col-md-2">
+                    <div class="dropdown">
+                        <a href="hiking.html" role="button" id="hikingLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <h5 class="d-inline text-dark fw-bold">Hiking</h5><i class="fas fa-angle-down text-dark"></i>
+                        </a>
+                    
+                        <ul class="dropdown-menu" aria-labelledby="hikingLink">
+                        <li><a class="dropdown-item" href="hiking.html">Hiking</a></li>
+                        <li><a class="dropdown-item" href="hiking.html#hikingOfficalMission">Hiking Official Mission</a></li>
+                        <li><a class="dropdown-item" href="hiking.html#hikingAssignMission">Hiking Assign Mission</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="dropdown">
+                        <a href="running.html" role="button" id="runningLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <h5 class="d-inline text-dark fw-bold">Running</h5><i class="fas fa-angle-down text-dark"></i>
+                        </a>
+                    
+                        <ul class="dropdown-menu" aria-labelledby="runningLink">
+                        <li><a class="dropdown-item" href="running.html">Running</a></li>
+                        <li><a class="dropdown-item" href="running.html#runningOfficalMission">Running Official Mission</a></li>
+                        <li><a class="dropdown-item" href="running.html#runningAssignMission">Running Assign Mission</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <div class="dropdown">
+                        <a href="biking.html" role="button" id="bicycleLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <h5 class="d-inline text-dark fw-bold">Biking</h5><i class="fas fa-angle-down text-dark"></i>
+                        </a>
+                    
+                        <ul class="dropdown-menu" aria-labelledby="bicycleLink">
+                        <li><a class="dropdown-item" href="biking.html">Biking</a></li>
+                        <li><a class="dropdown-item" href="biking#bikingOfficalMission.html">Biking Official Mission</a></li>
+                        <li><a class="dropdown-item" href="biking#bikingAssignMission.html">Biking Assign Mission</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <div class="dropdown">
+                        <a href="info.html" role="button" id="infoLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <h5 class="d-inline text-dark fw-bold">Info</h5><i class="fas fa-angle-down text-dark"></i>
+                        </a>
+                    
+                        <ul class="dropdown-menu" aria-labelledby="infoLink">
+                        <li><a class="dropdown-item" href="info.html">Info</a></li>
+                        <li><a class="dropdown-item" href="info.html#infoWeather">Weather Information</a></li>
+                        <li><a class="dropdown-item" href="info.html#infoTraffic">Traffic Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div>
+                        <a href="member.html" role="button" id="memberCenter">
+                        <h5 class="d-inline text-dark fw-bold">Membe Center</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+
+                    <div>
+                    <a href="login.html" role="button" id="SignIn">
+                        <h5 class="d-inline text-dark fw-bold">Sign In</h5>
+                    </a>
+                    </div>
+
+                    <div>
+                        <a href="index.html" role="button" id="logOut">
+                        <h5 class="d-inline text-dark fw-bold">Log Out</h5>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="mt-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- 選單 -->
+                <div class="col-md-2 border-end">
+                    <h5 class="row justify-content-center fw-bolder mt-4 mb-4">Hiking Mission</h5>
+                    <form action="">
+                        <div class="form-group mb-5">
+                            <label class="mb-1">Misson type</label>
+                            <select id="selectType" class="form-control form-select" aria-label="Default select example">
+                                <option selected value="hikingTA" >Open select menu</option>
+                                <option value="hikingTA">All</option>
+                                <option value="hikingT1">Official Mission</option>
+                                <option value="hikingT2">Assign Mission</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-5">
+                            <label class="mb-1">Level</label>
+                            <select class="form-control form-select" aria-label="Default select example">
+                                <option selected>Open select menu</option>
+                                <option value="hikingHA">All</option>
+                                <option value="hikingH1">Low</option>
+                                <option value="hikingH2">Middle</option>
+                                <option value="hikingH3">High</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-5">
+                            <label class="mb-1">Select-Distance</label>
+                            <select class="form-control form-select" aria-label="Default select example">
+                                <option selected>Open select menu</option>
+                                <option value="hikingDA">All</option>
+                                <option value="hikingD1"><1km</option>
+                                <option value="hikingD2">1~5km</option>
+                                <option value="hikingD3">5~10km</option>
+                                <option value="hikingD4">>10km</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-5">
+                            <label class="mb-1">Select-Time</label>
+                            <select class="form-control form-select" aria-label="Default select example">
+                                <option selected>Open select menu</option>
+                                <option value="hikingHA">All</option>
+                                <option value="hikingH1"><1hr</option>
+                                <option value="hikingH2">1~5hr</option>
+                                <option value="hikingH3">5~10hr</option>
+                                <option value="hikingH4">>10hr</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-5">
+                            <input class="form-control btn btn-primary" type="submit" value="Submit">
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- 卡片 -->
+                <div class="col-md-10">
+                    <div id="hikingOfficalMission">
+                        <div style="text-align: center;">
+                            <h4 class="fw-bolder mt-4 mb-4 border border-dark">Official Mission</h4>
+                        </div>
+                        
+                        <div class="row justify-content-start">
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking4.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test1</li>
+                                                <li>Mission type=test1</li>
+                                                <li>Level=test1</li>
+                                                <li>Select-Distance=test1</li>
+                                                <li>Select-Time=test1</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking5.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test2</li>
+                                                <li>Mission type=test2</li>
+                                                <li>Level=test2</li>
+                                                <li>Select-Distance=test2</li>
+                                                <li>Select-Time=test2</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking6.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test3</li>
+                                                <li>Mission type=test3</li>
+                                                <li>Level=test3</li>
+                                                <li>Select-Distance=test3</li>
+                                                <li>Select-Time=test3</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking7.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test4</li>
+                                                <li>Mission type=test4</li>
+                                                <li>Level=test4</li>
+                                                <li>Select-Distance=test4</li>
+                                                <li>Select-Time=test4</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking8.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test5</li>
+                                                <li>Mission type=test5</li>
+                                                <li>Level=test5</li>
+                                                <li>Select-Distance=test5</li>
+                                                <li>Select-Time=test5</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking9.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test6</li>
+                                                <li>Mission type=test6</li>
+                                                <li>Level=test6</li>
+                                                <li>Select-Distance=test6</li>
+                                                <li>Select-Time=test6</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking10.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test7</li>
+                                                <li>Mission type=test7</li>
+                                                <li>Level=test7</li>
+                                                <li>Select-Distance=test7</li>
+                                                <li>Select-Time=test7</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hikingAssignMission">
+                        <div style="text-align: center;">
+                            <h4 class="fw-bolder mt-4 mb-4 border border-dark">Assign Mission</h4>
+                        </div>
+                        
+                        <div class="row justify-content-start">
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking4.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test1</li>
+                                                <li>Mission type=test1</li>
+                                                <li>Level=test1</li>
+                                                <li>Select-Distance=test1</li>
+                                                <li>Select-Time=test1</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking5.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test2</li>
+                                                <li>Mission type=test2</li>
+                                                <li>Level=test2</li>
+                                                <li>Select-Distance=test2</li>
+                                                <li>Select-Time=test2</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking6.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test3</li>
+                                                <li>Mission type=test3</li>
+                                                <li>Level=test3</li>
+                                                <li>Select-Distance=test3</li>
+                                                <li>Select-Time=test3</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking7.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test4</li>
+                                                <li>Mission type=test4</li>
+                                                <li>Level=test4</li>
+                                                <li>Select-Distance=test4</li>
+                                                <li>Select-Time=test4</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking8.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test5</li>
+                                                <li>Mission type=test5</li>
+                                                <li>Level=test5</li>
+                                                <li>Select-Distance=test5</li>
+                                                <li>Select-Time=test5</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking9.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test6</li>
+                                                <li>Mission type=test6</li>
+                                                <li>Level=test6</li>
+                                                <li>Select-Distance=test6</li>
+                                                <li>Select-Time=test6</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="mx-1 my-2 border shadow rounded" style=" height: 480px; ">
+                                    <div style="height: 300px">
+                                        <a href="hikingMission.html"><img src="./resources/img/hiking/hiking10.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;"></a>
+                                    </div>
+                                    <div class="px-3" style="display: flex; align-items: center;height: 180px">
+                                        <div>
+                                            <h6 class="fw-bold">Mission</h6>
+                                            <ul>
+                                                <li>Mission Name=test7</li>
+                                                <li>Mission type=test7</li>
+                                                <li>Level=test7</li>
+                                                <li>Select-Distance=test7</li>
+                                                <li>Select-Time=test7</li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-3 pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <h6 class="d-inline fw-bold">About US</h6>
+                </div>
+                <div class="col">
+                <h6 class="d-inline fw-bold">Contact US</h6>
+                </div>
+            </div>
+        
+            <div class="row mt-3">
+                <div class="col">
+                <h6 class="d-inline fw-bold">Copyright © 2021 SpotTest</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function(){
+    
+            // 使用者帳號確認
+            var userName = document.getElementById("userName").innerHTML;
+            // console.log(userName);
+
+            if(userName.length==0){
+                $("#SignIn").show();
+                $("#logOut").hide();
+                }else{
+                $("#SignIn").hide();
+                $("#logOut").show();
+            }
+
+            document.getElementById("selectType").addEventListener("click", selectType);
+            
+            function selectType(){
+                let hType = document.getElementById("selectType").value; 
+                if(hType == "hikingT1"){
+                    $("#hikingOfficalMission").show();
+                    $("#hikingAssignMission").hide();
+                }else if(hType == "hikingT2"){
+                    $("#hikingOfficalMission").hide();
+                    $("#hikingAssignMission").show();
+                }
+
+                console.log(document.getElementById("selectType").value);
+            }
+        });
+    </script>
+
+</body>
+</html>
